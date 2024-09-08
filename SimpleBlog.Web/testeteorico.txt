@@ -1,0 +1,86 @@
+﻿Respostas do teste teórico
+
+1. Orientação a Objetos: 
+1.1 Explique o conceito de herança múltipla e como C# aborda esse cenário. 
+R - Herança Múltipla é a capacidade de uma classe possuir mais de uma superclasse e herdar as variáveis e métodos combinados de todas as superclasses.
+No C# não há suporte para herança múltipla de classes. Para superar esse problema, podemos usar interfaces onde uma classe pode implementar mais de uma interface ou de uma classe e de uma ou mais de uma interface.
+
+1.2 Explique o polimorfismo em C# e forneça um exemplo prático de como ele pode ser implementado.
+R- O polimorfismo é um conceito que permite que objetos de diferentes classes sejam tratados de maneira uniforme.
+O polimorfismo permite que você chame o mesmo método em objetos de classes diferentes, obtendo comportamentos específicos de cada classe.
+
+Exemplo:
+
+public class Animal
+{
+	public virtual void EmitirSom()
+	{
+		Console.WriteLine("Som de animal genérico");
+	}
+}
+
+public class Cachorro : Animal
+{
+	public override void EmitirSom()
+	{
+	  Console.WriteLine("Au au!");
+	}
+}
+
+public class Gato : Animal
+{
+	public override void EmitirSom()
+	{
+	  Console.WriteLine("Miau!");
+	}
+}
+
+
+2. SOLID: 
+2.1 Descreva o princípio da Responsabilidade Única (SRP) e como ele se aplica em um contexto de desenvolvimento C#.
+R - SRP descreve que uma classe deve ter um, e somente um, motivo para mudar. Esse princípio declara que uma classe deve ser especializada em um único assunto e possuir apenas uma responsabilidade dentro do software, ou seja, a classe deve ter uma única tarefa ou ação para executar.
+Dentro de um contexto de desenvolvimento, podemos dizer que uma classe Pedido, nao deve ter métodos de salvar, alterar, e excluir registros, assim como métodos de imprimir pedidos. Deve apenas lidar com as informações lidados ao pedido, e somente isso.
+
+2.2 Como o princípio da inversão de dependência (DIP) pode ser aplicado em um projeto C# e como isso beneficia a manutenção do código?
+R - Esse princípio fala que módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender da abstração.
+Num projeto .net, usando C# como linguagem, uma classe nao deve depender de outra, para sanar esse problema, deve-se usar uma interface no lugar da classe que era dependente. Essa por sua vez deve implementar essa interface. Usando a interface, qualquer classe que a implemente poderá ser usada na respectiva solução.
+
+3. Entity Framework (EF): 
+3.1 Como o Entity Framework gerencia o mapeamento de objetos para o banco de dados e vice-versa?
+R - No EF, existem os mapeamentos Code First e Database First.
+No mapeamento Code First começa-se definindo as classes C# (POCOs - Plain Old CLR Objects). O EF então usa convenções ou configurações específicas para mapear essas classes para o banco de dados.
+Convenções: O EF usa um conjunto de regras padrão para inferir o mapeamento. Por exemplo, uma propriedade chamada Id ou ClassNameId é automaticamente considerada uma chave primária.
+Configurações: Pode-se usar a Fluent API ou Data Annotations para personalizar o mapeamento. A Fluent API oferece um método programático para definir configurações, enquanto as Data Annotations usam atributos diretamente nas classes e propriedades.
+
+No mapeamento Database First começa-se com um banco de dados existente e o EF gera as classes de entidade e o modelo de contexto com base na estrutura do banco de dados.
+O EF usa uma ferramenta chamada "Entity Data Model Wizard" para criar o EDMX, que é um arquivo XML que descreve os modelos conceitual, de armazenamento e de mapeamento.
+O EDMX facilita o mapeamento entre o banco de dados e as classes .NET, gerando automaticamente as classes de entidade e o DbContext.
+
+3.2 Como otimizar consultas no Entity Framework para garantir um desempenho eficiente em grandes conjuntos de dados?
+R - Usando Filtragem e Paginação para lidar com grandes conjuntos de dados, trazendo apenas um subconjunto de registros por vez.
+Usando projeção para projetar apenas as colunas necessárias em vez de trazer todas as colunas da tabela
+Usando AsNoTracking para consultas de leitura quando as entidades retornadas não precisam ser rastreadas pelo contexto, o que melhora o desempenho e reduz a memória usada.
+Certificar de que o banco de dados tem índices adequados para as colunas frequentemente usadas em filtros e junções
+
+4. WebSockets: 
+4.1 Explique o papel dos WebSockets em uma aplicação C# e como eles se comparam às solicitações HTTP tradicionais. 
+R - WebSocket é uma tecnologia avançada para criar uma ligação entre um cliente e um servidor (browser e servidor) e permitir a comunicação entre eles em tempo real.
+A principal diferença com o WebSocket é que permite receber dados sem ter de enviar um pedido separado, como, por exemplo, acontece nas requisições HTTP. Uma vez estabelecida a ligação, os dados virão por si mesmos sem necessidade de enviar o pedido. É a vantagem de utilizar o protocolo WebSocket em chats ou relatórios de stock, onde precisa de receber informação constantemente actualizada
+
+4.2 Quais são as principais considerações de segurança ao implementar uma comunicação baseada em WebSockets em uma aplicação C#?
+Optar sempre por uma conexão WebSocket (WSS) segura em vez do protocolo WS não criptografado. Certifique-se de que seu servidor esteja configurado para suportar conexões WSS.
+Autenticar e autorizar conexões WebSocket
+Implementar controles de acesso e políticas CORS no servidor para restringir o acesso de origens indesejadas ou sites maliciosos
+
+5. Arquitetura: 
+5.1 Descreva a diferença entre arquitetura monolítica e arquitetura de microsserviços. Qual seria sua escolha ao projetar uma aplicação C#? 
+R - As aplicações monolíticas geralmente consistem em uma interface de usuário do lado do cliente, um banco de dados e uma aplicação do lado do servidor. Os desenvolvedores criam todos esses módulos em uma única base de código.
+Por outro lado, em uma arquitetura distribuída, cada microsserviço trabalha para realizar um único recurso ou lógica de negócios. Em vez de trocar dados na mesma base de código, os microsserviços se comunicam com uma API.
+A escolha dependeria da natureza e cenário no qual a aplicação iria ser aplicada. Se fosse uma aplicação simples, com pouco tempo para desenvolvimento, a escolha seria uma arquitetura monolítica.
+No entanto, se o cenário tivesse um tempo de desenvolvimento razoável, e a aplicação exigisse um pouco mais de complexidade, eu iria optar pela arquitetura de microserviços.
+
+5.2 Como você escolheria entre a arquitetura de microsserviços e a arquitetura monolítica ao projetar uma aplicação C# que precisa ser altamente escalável?
+É mais fácil começar com aplicações monolíticas, pois não é necessário muito planejamento prévio.
+No entanto, a aplicação pode se tornar complexa e difícil de atualizar ou alterar com o tempo.
+Uma arquitetura de microsserviços exige mais planejamento e design antes de começar. Os desenvolvedores devem identificar diferentes funções que possam funcionar de forma independente e planejar APIs consistentes.
+Desta forma, para uma aplicação minimamente escalável eu optaria pela arquitetura de microserviços.

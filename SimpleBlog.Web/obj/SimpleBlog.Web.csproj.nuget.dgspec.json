@@ -1,0 +1,290 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Web\\SimpleBlog.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj",
+        "projectName": "SimpleBlog.Core",
+        "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Infraestructure\\SimpleBlog.Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Infraestructure\\SimpleBlog.Infraestructure.csproj",
+        "projectName": "SimpleBlog.Infraestructure",
+        "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Infraestructure\\SimpleBlog.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\SimpleBlog.Services.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\SimpleBlog.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\SimpleBlog.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\SimpleBlog.Services.csproj",
+        "projectName": "SimpleBlog.Services",
+        "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\SimpleBlog.Services.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.RazorPages": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Web\\SimpleBlog.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Web\\SimpleBlog.Web.csproj",
+        "projectName": "SimpleBlog.Web",
+        "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Web\\SimpleBlog.Web.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Core\\SimpleBlog.Core.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Infraestructure\\SimpleBlog.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Infraestructure\\SimpleBlog.Infraestructure.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\SimpleBlog.Services.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\Testes_entrevistas\\SimpleBlog\\SimpleBlog.Services\\SimpleBlog.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

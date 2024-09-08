@@ -1,0 +1,13 @@
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\bin\Debug\net8.0\SimpleBlog.Core.deps.json
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\bin\Debug\net8.0\SimpleBlog.Core.dll
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\bin\Debug\net8.0\SimpleBlog.Core.pdb
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.csproj.AssemblyReference.cache
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.AssemblyInfoInputs.cache
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.AssemblyInfo.cs
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.csproj.CoreCompileInputs.cache
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.sourcelink.json
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.dll
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\refint\SimpleBlog.Core.dll
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\SimpleBlog.Core.pdb
+C:\Users\rober\Documents\Testes_entrevistas\SimpleBlog\SimpleBlog.Core\obj\Debug\net8.0\ref\SimpleBlog.Core.dll
