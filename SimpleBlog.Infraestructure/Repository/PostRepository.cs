@@ -1,4 +1,4 @@
-﻿using SimpleBlog.Services.Data;
+﻿using SimpleBlog.Infraestructure.Data;
 using SimpleBlog.Core.Models;
 using Microsoft.EntityFrameworkCore;
 

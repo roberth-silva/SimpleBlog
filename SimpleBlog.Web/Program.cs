@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SimpleBlog.Core.Models;
-using SimpleBlog.Services.Data;
+using SimpleBlog.Infraestructure.Data;
 using SimpleBlog.Services.Hubs;
 
 

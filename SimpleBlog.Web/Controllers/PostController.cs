@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using SimpleBlog.Core.Models;
 using SimpleBlog.Infraestructure.Gateway;
-using SimpleBlog.Services.Data;
+using SimpleBlog.Infraestructure.Data;
 using SimpleBlog.Services.Hubs;
 
 namespace SimpleBlog.Web.Controllers

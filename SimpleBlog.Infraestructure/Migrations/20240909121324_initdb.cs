@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace SimpleBlog.Migrations
+namespace SimpleBlog.Infraestructure.Migrations
 {
     /// <inheritdoc />
-    public partial class createdb : Migration
+    public partial class initdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

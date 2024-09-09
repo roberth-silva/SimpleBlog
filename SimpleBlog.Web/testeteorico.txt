@@ -3,7 +3,7 @@
 1. Orientação a Objetos: 
 1.1 Explique o conceito de herança múltipla e como C# aborda esse cenário. 
 R - Herança Múltipla é a capacidade de uma classe possuir mais de uma superclasse e herdar as variáveis e métodos combinados de todas as superclasses.
-No C# não há suporte para herança múltipla de classes. Para superar esse problema, podemos usar interfaces onde uma classe pode implementar mais de uma interface ou de uma classe e de uma ou mais de uma interface.
+No C# não há suporte para herança múltipla de classes. Para superar esse problema, podemos usar interfaces onde uma classe pode implementar mais de uma interface.
 
 1.2 Explique o polimorfismo em C# e forneça um exemplo prático de como ele pode ser implementado.
 R- O polimorfismo é um conceito que permite que objetos de diferentes classes sejam tratados de maneira uniforme.
@@ -68,7 +68,7 @@ R - WebSocket é uma tecnologia avançada para criar uma ligação entre um clie
 A principal diferença com o WebSocket é que permite receber dados sem ter de enviar um pedido separado, como, por exemplo, acontece nas requisições HTTP. Uma vez estabelecida a ligação, os dados virão por si mesmos sem necessidade de enviar o pedido. É a vantagem de utilizar o protocolo WebSocket em chats ou relatórios de stock, onde precisa de receber informação constantemente actualizada
 
 4.2 Quais são as principais considerações de segurança ao implementar uma comunicação baseada em WebSockets em uma aplicação C#?
-Optar sempre por uma conexão WebSocket (WSS) segura em vez do protocolo WS não criptografado. Certifique-se de que seu servidor esteja configurado para suportar conexões WSS.
+Optar sempre por uma conexão WebSocket (WSS) segura em vez do protocolo WS não criptografado. É necessário garantir que o servidor esteja configurado para suportar conexões WSS.
 Autenticar e autorizar conexões WebSocket
 Implementar controles de acesso e políticas CORS no servidor para restringir o acesso de origens indesejadas ou sites maliciosos
 

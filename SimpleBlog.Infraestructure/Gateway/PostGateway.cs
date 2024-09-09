@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using SimpleBlog.Core.Models;
 using SimpleBlog.Infraestructure.Repository;
-using SimpleBlog.Services.Data;
+using SimpleBlog.Infraestructure.Data;
 using SimpleBlog.Services.Hubs;
 
 namespace SimpleBlog.Infraestructure.Gateway

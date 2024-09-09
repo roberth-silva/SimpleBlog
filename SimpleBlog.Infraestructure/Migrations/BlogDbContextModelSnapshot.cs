@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SimpleBlog.Services.Data;
+using SimpleBlog.Infraestructure.Data;
 
 #nullable disable
 
-namespace SimpleBlog.Migrations
+namespace SimpleBlog.Infraestructure.Migrations
 {
     [DbContext(typeof(BlogDbContext))]
     partial class BlogDbContextModelSnapshot : ModelSnapshot
@@ -15,7 +15,7 @@ namespace SimpleBlog.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -149,7 +149,7 @@ namespace SimpleBlog.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("SimpleBlog.Areas.Identity.Data.ApplicationUser", b =>
+            modelBuilder.Entity("SimpleBlog.Core.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
@@ -221,7 +221,7 @@ namespace SimpleBlog.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("SimpleBlog.Models.PostModel", b =>
+            modelBuilder.Entity("SimpleBlog.Core.Models.PostModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -260,7 +260,7 @@ namespace SimpleBlog.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("SimpleBlog.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("SimpleBlog.Core.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -269,7 +269,7 @@ namespace SimpleBlog.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("SimpleBlog.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("SimpleBlog.Core.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -284,7 +284,7 @@ namespace SimpleBlog.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SimpleBlog.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("SimpleBlog.Core.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -293,16 +293,16 @@ namespace SimpleBlog.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("SimpleBlog.Areas.Identity.Data.ApplicationUser", null)
+                    b.HasOne("SimpleBlog.Core.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SimpleBlog.Models.PostModel", b =>
+            modelBuilder.Entity("SimpleBlog.Core.Models.PostModel", b =>
                 {
-                    b.HasOne("SimpleBlog.Areas.Identity.Data.ApplicationUser", "User")
+                    b.HasOne("SimpleBlog.Core.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace SimpleBlog.Services.Data;
+namespace SimpleBlog.Infraestructure.Data;
 
 public class BlogDbContext : IdentityDbContext<ApplicationUser>
 {
